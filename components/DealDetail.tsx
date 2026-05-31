@@ -117,7 +117,7 @@ export function DealDetail({ deal }: { deal: Deal }) {
   );
 }
 
-function Timeline({ steps }: { steps: ProgressStep[] }) {
+export function Timeline({ steps }: { steps: ProgressStep[] }) {
   return (
     <ol className="flex items-start justify-between gap-1">
       {steps.map((step, i) => (

@@ -11,7 +11,15 @@ export default function Home() {
             Sovereign
           </span>
         </div>
-        <span className="eyebrow hidden sm:block">v0.1 · Investor demo</span>
+        <div className="flex items-center gap-5">
+          <Link
+            href="/login"
+            className="font-serif text-lg text-ink-mute hover:text-ink transition-colors"
+          >
+            Sign in
+          </Link>
+          <span className="eyebrow hidden sm:block">v0.1 · Investor demo</span>
+        </div>
       </header>
 
       {/* Hero */}
@@ -32,23 +40,21 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-12">
             <Link
-              href="/dashboard"
+              href="/login"
               className="inline-flex items-center justify-center gap-2 rounded-md bg-ink text-cream-warm px-7 py-3.5 font-serif text-lg tracking-wide transition-colors hover:bg-[#241a0e]"
             >
-              View Demo Dashboard
+              Sign in
               <span aria-hidden>→</span>
             </Link>
-            <a
-              href="https://sovereign.codedestate.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/dashboard"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-hairline px-7 py-3.5 font-serif text-lg tracking-wide text-ink transition-colors hover:border-ink"
             >
-              Read protocol
+              View demo dashboard
               <span aria-hidden className="text-gold-light">
-                ↗
+                →
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
